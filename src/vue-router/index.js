@@ -6,6 +6,7 @@
  */
 import HashHistory from "./hashHistory.js";
 import View from "./components/view.js";
+import Link from "./components/link.js";
 
 class VueRouter {
   constructor(options) {
@@ -94,6 +95,8 @@ VueRouter.install = (Vue) => {
 
   // 注册router-view
   Vue.component("RouterView", View);
+  // 注册router-link
+  Vue.component("RouterLink", Link);
 };
 
 // 创建路由到组件的映射

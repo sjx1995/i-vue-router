@@ -5,6 +5,7 @@
  * @Date: 2023-09-14 07:08:15
  */
 import HashHistory from "./hashHistory.js";
+import View from "./components/view.js";
 
 class VueRouter {
   constructor(options) {
@@ -90,6 +91,9 @@ VueRouter.install = (Vue) => {
       return this._routerRoot._route;
     },
   });
+
+  // 注册router-view
+  Vue.component("RouterView", View);
 };
 
 // 创建路由到组件的映射

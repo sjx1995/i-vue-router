@@ -7,9 +7,9 @@
 ## 实现功能
 
 - [x] hash路由
+- [x] router-view
+- [x] router-link
 
 ## 待实现功能
 
-- [ ] router-view
-- [ ] router-link
 - [ ] history 路由
